@@ -1,6 +1,18 @@
+import React from 'react';
 import Image from 'next/image'
+import Home from './Main/Home';
+import Research from './Research/Research';
 
-export default function Home() {
+export default function Page() {
+  return (
+    <div>
+      <Home />
+      <Research />
+    </div>
+  )
+}
+
+function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
